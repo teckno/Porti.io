@@ -84,12 +84,18 @@ h2 {
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 3rem;
   font-family: 'Shadows Into Light', cursive;
 }
-
+.big{
+  font-size: 4rem;
+}
 h2 {
-  font-size: 4.2rem;
+  font-size: 3.2rem;
+}
+h3{
+  font-size: 3rem;
+   font-family: 'Shadows Into Light', cursive;
 }
 
 ul {
@@ -107,30 +113,31 @@ img {
   width: 100%;
   
 }
-.circular--landscape {
-  display: inline-block;
-  position: relative;
-  width: 250px;
-  height: 250px;
-  overflow: hidden;
+/* Image profie*/
+
+.image--cover {
+  width: 15em;
+  height: 15em;
   border-radius: 50%;
-      margin-left: 750px;
-    
-}
+
+  object-fit: cover;
+  object-position: center right;
 }
 
-.circular--landscape img {
-  width: auto;
+
+.image-cropper {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.profile-pic {
+  display: inline;
+  margin: 0 auto;
+  margin-left: -25%; //centers the image
   height: 100%;
-  margin-left: -30px;
-}
-
-#round{
-
-   border-top-left-radius: 50% 50%;
-  border-top-right-radius: 50% 50%;
-  border-bottom-right-radius: 50% 50%;
-  border-bottom-left-radius: 50% 50%;
+  width: auto;
 }
 /* nav */
 
@@ -181,17 +188,23 @@ img {
   align-items: center;
   width: 100%;
   height: 100vh;
+  
   background-color: #023047;
   
 }
 
 .welcome-section > p {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 200;
-  font-style: italic;
-  color: var(--main-red);
+ color: white;
+  font-family: 'Shadows Into Light', cursive;
+  
 }
 
+
+.welcome-section > hr{
+  border-top: 1px solid white;
+}
 /* Projects section */
 
 .projects-section {
